@@ -12,7 +12,7 @@ int strcmp(char *s, char *t) {
     return *s - *t;
 }
 
-// push
+// stack's push
 *p++ = val;
-// pop
+// stack's pop
 val = *--p;
