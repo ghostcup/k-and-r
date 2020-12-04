@@ -3,7 +3,7 @@
 
 double atof(char s[]);
 
-int main() {
+int main(void) {
     printf("%lf", atof("13.14"));
     return 0;
 }
