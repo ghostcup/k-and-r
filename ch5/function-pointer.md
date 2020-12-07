@@ -15,7 +15,7 @@ qsort((void **) lineptr, 0, n - 1,
      (int (*) (void *, void *))(numeric ? numcmp : strcmp));
 ```
 
-`lineptr` is declared as `char *lineptr[MAXLINES]`, which is a pointer pointing to the text lines. While calling `qsort`, it casts to a universal type of pointer namely `void **` because the back-and-forth casting would not make information lost. And, it makes this version of `qsort` able to handle different data types.
+`lineptr` is declared as `char *lineptr[MAXLINES]`, which is an array of pointers pointing to the text lines. While calling `qsort`, it casts to a universal type of pointer namely `void **` because the back-and-forth casting would not make information lost. And, it makes this version of `qsort` able to handle different data types.
 
 <br>
 
